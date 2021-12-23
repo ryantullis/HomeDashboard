@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 function App() {
   return (
-    
-    <div className="App">
+<div className="App">
+  <div>
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">RyanTullis.com</Navbar.Brand>
@@ -26,21 +26,17 @@ function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  </div>
+  <div id="bodywin">
+    <p id="name">Ryan Tullis</p>
+    <p id="label">Software Engineering</p>
+    <SocialIcon url="https://www.linkedin.com/in/ryan-tullis-968948190/" fgColor='white' className='SocialIcons'/>
+    <SocialIcon url="https://github.com/ryantullis" fgColor='white' className='SocialIcons'/>
+    <SocialIcon url="mailto:ryan@ryantullis.com" fgColor='white' className='SocialIcons'/>
+  </div>
+</div>
+    
+    
   );
 }
 
